@@ -1,0 +1,19 @@
+{
+  "name": "metalsmith-writemetadata",
+  "description": "A Metalsmith plugin to write the metadata as json files to the filesystem.",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/Waxoliunist/metalsmith-writemetadata.git"
+  },
+  "version": "0.0.1",
+  "license": "MIT",
+  "main": "lib/index.js",
+  "dependencies": {
+  },
+  "devDependencies": {
+  },
+  "bugs": {
+    "url": "https://github.com/Waxolunist/metalsmith-writemetadata/issues"
+  },
+  "homepage": "git://github.com/Waxoliunist/metalsmith-writemetadata.git"
+}
