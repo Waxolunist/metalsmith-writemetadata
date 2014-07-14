@@ -14,6 +14,18 @@ var writemetadata = require('metalsmith-writemetadata');
 Metalsmith.use(writemetadata());
 ```
 
+### Parameter
+
+#### pattern
+
+```js
+Metalsmith.use(writemetadata({
+  pattern: ['*.md', '*.html']
+}));
+```
+
+Accepts as paramater a pattern like in [multimatch](https://github.com/sindresorhus/multimatch).
+
 ## License
 
 MIT
