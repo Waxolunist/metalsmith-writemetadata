@@ -9,6 +9,7 @@
   "license": "MIT",
   "main": "lib/index.js",
   "dependencies": {
+    "debug": "^1.0.3",
     "multimatch": "^0.3.0"
   },
   "devDependencies": {},
