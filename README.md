@@ -26,6 +26,16 @@ Metalsmith.use(writemetadata({
 
 Accepts as paramater a pattern like in [multimatch](https://github.com/sindresorhus/multimatch).
 
+#### ignorekeys
+
+```js
+Metalsmith.use(writemetadata({
+  ignorekeys: ['next', 'previous']
+}));
+```
+
+Accepts an array of keys to ignore in the output.
+
 ## License
 
 MIT
