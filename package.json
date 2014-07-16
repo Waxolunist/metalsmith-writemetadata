@@ -5,12 +5,12 @@
     "type": "git",
     "url": "git://github.com/Waxoliunist/metalsmith-writemetadata.git"
   },
-  "version": "0.2.0",
+  "version": "0.3.0",
   "license": "MIT",
   "main": "lib/index.js",
   "dependencies": {
     "debug": "^1.0.3",
-    "json-stringify-safe": "^5.0.0",
+    "circular-json": "^0.1.6",
     "multimatch": "^0.3.0"
   },
   "devDependencies": {},
