@@ -39,6 +39,14 @@ Metalsmith(__dirname)
 
 Accepts an array of keys to ignore in the output.
 
+#### space
+
+Sets the space to use in `JSON.stringify`.
+
+Defaults to `'\t'`.
+
+Use `0` to minify the json.
+
 #### collections
 
 If used together with the collections plugin, this plugin can also write collections.
