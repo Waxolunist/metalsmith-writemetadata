@@ -5,7 +5,7 @@
     "type": "git",
     "url": "git://github.com/Waxoliunist/metalsmith-writemetadata.git"
   },
-  "version": "0.4.1",
+  "version": "0.4.0",
   "license": "MIT",
   "main": "lib/index.js",
   "dependencies": {
