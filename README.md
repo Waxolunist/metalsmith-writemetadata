@@ -53,12 +53,33 @@ Metalsmith(__dirname)
 .use(writemetadata({
   collections: {
     projects: {
-      output: 'content/projects.json',
+      output: {
+        path: 'content/projects.json',
+        asObject: true,
+        metadata: {
+          "type": "list"
+        }
+      },
       ignorekeys: ['contents', 'next', 'previous']
     }
   }
 }))
 ```
+
+##### collections.output
+
+output is a parameter for collections, determining the desired output. If **asObject** is false, an array will be output. Otherwise a object in following format (taking example from above):
+
+```js
+{
+  name: 'projects',
+  total: 9,
+  type: 'list',
+  result: [...]
+  
+}
+```
+
 ## Complete example
 
 This example is from a real world example:
@@ -82,7 +103,13 @@ Metalsmith(__dirname)
   ignorekeys: ['next', 'previous'],
   collections: {
     projects: {
-      output: 'content/projects.json',
+      output: {
+        path: 'content/projects.json',
+        asObject: true,
+        metadata: {
+          "type": "list"
+        }
+      },
       ignorekeys: ['contents', 'next', 'previous']
     }
   }
