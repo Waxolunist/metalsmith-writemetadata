@@ -42,8 +42,11 @@ Accepts an array of keys to ignore in the output.
 #### bufferencoding
 
 **Since: 0.4.3**
+
 **Default: false**
+
 **See: [Buffer.toString](https://nodejs.org/api/buffer.html#buffer_buf_tostring_encoding_start_end)**
+
 **Resolves: [Issue #1](https://github.com/Waxolunist/metalsmith-writemetadata/issues/1)**
 
 ```js
