@@ -39,6 +39,23 @@ Metalsmith(__dirname)
 
 Accepts an array of keys to ignore in the output.
 
+#### bufferencoding
+
+**Since: 0.4.3**
+**Default: false**
+**See: [Buffer.toString](https://nodejs.org/api/buffer.html#buffer_buf_tostring_encoding_start_end)**
+**Resolves: [Issue #1](https://github.com/Waxolunist/metalsmith-writemetadata/issues/1)**
+
+```js
+Metalsmith(__dirname)
+.use(writemetadata({
+  bufferencoding: 'utf8'
+}));
+```
+
+If this value is set, the contents field which is internally represented as a Buffer, will be converted to a string 
+by calling the method Buffer.toString with the encoding specified in the options.
+
 #### collections
 
 If used together with the collections plugin, this plugin can also write collections.
@@ -101,6 +118,7 @@ Metalsmith(__dirname)
 .use(writemetadata({
   pattern: ['**/*.html'],
   ignorekeys: ['next', 'previous'],
+  bufferencoding: 'utf8',
   collections: {
     projects: {
       output: {
