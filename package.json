@@ -3,20 +3,20 @@
   "description": "A Metalsmith plugin to write the metadata as json files to the filesystem.",
   "repository": {
     "type": "git",
-    "url": "git://github.com/Waxoliunist/metalsmith-writemetadata.git"
+    "url": "git://github.com/Waxolunist/metalsmith-writemetadata.git"
   },
-  "version": "0.4.0",
+  "version": "0.4.3",
   "license": "MIT",
   "main": "lib/index.js",
   "dependencies": {
-    "debug": "^1.0.3",
+    "debug": "^2.1.3",
     "circular-json": "^0.1.6",
-    "multimatch": "^0.3.0",
-    "node.extend": "^1.0.10"
+    "multimatch": "^2.0.0",
+    "node.extend": "^1.1.3"
   },
   "devDependencies": {},
   "bugs": {
     "url": "https://github.com/Waxolunist/metalsmith-writemetadata/issues"
   },
-  "homepage": "git://github.com/Waxoliunist/metalsmith-writemetadata.git"
+  "homepage": "git://github.com/Waxolunist/metalsmith-writemetadata.git"
 }
