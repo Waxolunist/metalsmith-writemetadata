@@ -37,7 +37,19 @@ Metalsmith(__dirname)
 }));
 ```
 
-Accepts an array of keys to ignore in the output.
+Accepts an array of keys to ignore in the output. These keys are ignored regardless of where in the object hierarchy they appear.
+
+
+#### childIgnorekeys
+
+```js
+Metalsmith(__dirname)
+.use(writemetadata({
+  childIgnorekeys: ['next', 'previous', 'content']
+}));
+```
+
+Accepts an array of keys to ignore in the output if they are not a part of the root object.
 
 #### bufferencoding
 
